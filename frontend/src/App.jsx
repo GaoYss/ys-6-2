@@ -92,7 +92,7 @@ export default function App() {
         </div>
       )}
       {activeModule === 'dashboard' && <Dashboard {...commonProps} />}
-      {activeModule === 'catalog' && <Catalog {...commonProps} />}
+      {activeModule === 'catalog' && <Catalog {...commonProps} onModuleChange={setActiveModule} />}
       {activeModule === 'specs' && <Specifications {...commonProps} />}
       {activeModule === 'supply' && <Supply {...commonProps} />}
       {activeModule === 'finance' && <Finance {...commonProps} />}
